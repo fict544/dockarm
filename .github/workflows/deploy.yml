@@ -27,4 +27,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: fict7799/dock:latest
+          tags: fiction7799/dock:latest
