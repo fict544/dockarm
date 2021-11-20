@@ -25,6 +25,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64
+          platforms: linux/arm64/v8
           push: true
-          tags: fiction7799/dock:latest
+          tags: fiction7799/dockarm:latest
