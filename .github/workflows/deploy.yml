@@ -28,6 +28,6 @@ jobs:
 
       - name: Build and publish to Docker Hub
         run: |
-          doocker buildx build --push \
+          docker buildx build --push \
             --tag fiction7799/dockarm:latest \
             --platform linux/amd64,linux/arm64 .
