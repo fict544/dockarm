@@ -30,7 +30,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - 
         name: Build and publish to Docker Hub
-        run: |
-          docker buildx build --push \
-            --tag fiction7799/dockarm:latest \
-            --platform linux/arm64 .
+        uses: docker/buildX-push-action@v2.7.0
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/arm64
+          push: true
+          tags: fiction7799/dockARM:latest.
